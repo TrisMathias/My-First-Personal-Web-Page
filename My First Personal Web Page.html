@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Personal Web Page</title>
+</head>
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f0f8ff; margin: 20px; color: #333; line-height: 1.6;">
+
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 48px; color: #0066cc; text-align: center; margin-bottom: 20px;">
+        My Portfolio
+    </h1>
+    
+    <p style="font-family: Georgia, serif; font-size: 20px; max-width: 700px; margin: 0 auto 40px auto; padding: 0 10px; text-align: center; color: #444;">
+        I am Samner Arreco, a simple and humble person. My goal is to become a successful crew member on a ship and work hard to achieve my dreams.
+    </p>
+    
+    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 32px; color: #ff7f50; margin-top: 50px; text-align: center;">
+        My Hobbies
+    </h2>
+    
+    <ul style="list-style: none; padding: 0; max-width: 700px; margin: 20px auto; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; font-size: 20px;">
+        <li style="background-color: #ffe4b5; padding: 10px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Basketball</li>
+        <li style="background-color: #e0ffff; padding: 10px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">E-games</li>
+        <li style="background-color: #fafad2; padding: 10px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Bonding with friends</li>
+    </ul>
+    
+    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 32px; color: #32cd32; margin-top: 50px; text-align: center;">
+        Follow Me
+    </h2>
+    
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook" style="display: inline-block; transition: transform 0.2s;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Icon" style="width: 50px; height: 50px; transition: transform 0.3s;" />
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" style="display: inline-block; transition: transform 0.2s;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Icon" style="width: 50px; height: 50px; transition: transform 0.3s;" />
+        </a>
+        <a href="mailto:example@gmail.com" target="_blank" aria-label="Gmail" style="display: inline-block; transition: transform 0.2s;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Icon" style="width: 50px; height: 50px; transition: transform 0.3s;" />
+        </a>
+    </div>
+    
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.querySelector('img').style.transform = 'scale(1.2)';
+            });
+            link.addEventListener('mouseleave', () => {
+                link.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
